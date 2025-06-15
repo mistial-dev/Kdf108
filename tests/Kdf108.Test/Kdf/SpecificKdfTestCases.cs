@@ -1,4 +1,4 @@
-// -----------------------------------------------------------------------------
+﻿// -----------------------------------------------------------------------------
 // MIT License
 //
 // Copyright (c) 2025 Mistial Developer <opensource@mistial.dev>
@@ -26,6 +26,7 @@ using System.Reflection;
 using Kdf108.Domain.Kdf;
 using Kdf108.Domain.Kdf.Modes;
 using Kdf108.Internal;
+using NUnit.Framework;
 using Org.BouncyCastle.Crypto.Engines;
 using Org.BouncyCastle.Crypto.Macs;
 using Org.BouncyCastle.Crypto.Parameters;

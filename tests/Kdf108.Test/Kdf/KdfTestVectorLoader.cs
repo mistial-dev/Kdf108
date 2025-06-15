@@ -1,15 +1,15 @@
-// -----------------------------------------------------------------------------
+﻿// -----------------------------------------------------------------------------
 // MIT License
-// 
+//
 // Copyright (c) 2025 Mistial Developer <opensource@mistial.dev>
-// 
+//
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
 // in the Software without restriction, including without limitation the rights
 // to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 // copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
-// 
+//
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 // EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
 // MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
@@ -77,6 +77,13 @@ public static class KdfTestVectorLoader
         return ParseVectorsFromLines(lines, mode, hasCounter);
     }
 
+    /// <summary>
+    /// Parses a list of test vector lines and produces a collection of KDF test vectors.
+    /// </summary>
+    /// <param name="lines">The list of lines representing test vectors, excluding comments and empty lines.</param>
+    /// <param name="mode">The mode of the test vectors, specifying the type of KDF operation.</param>
+    /// <param name="hasCounter">A flag indicating whether the test vector includes a counter.</param>
+    /// <returns>A collection of KdfTestVector representing the parsed test vectors.</returns>
     private static IEnumerable<KdfTestVector> ParseVectorsFromLines(List<string> lines, TestVectorMode mode,
         bool hasCounter)
     {
