@@ -19,23 +19,24 @@
 // SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // -----------------------------------------------------------------------------
 
-namespace Kdf108.Domain.Kdf;
-
-/// <summary>
-///     Enumeration of supported pseudorandom function types for key derivation
-/// </summary>
-public enum PrfType
+namespace Kdf108.Domain.Kdf
 {
-    // HMAC PRFs
-    HmacSha1,
-    HmacSha224,
-    HmacSha256,
-    HmacSha384,
-    HmacSha512,
+    /// <summary>
+    ///     Enumeration of supported pseudorandom function types for key derivation
+    /// </summary>
+    public enum PrfType
+    {
+        // HMAC PRFs
+        HmacSha1,
+        HmacSha224,
+        HmacSha256,
+        HmacSha384,
+        HmacSha512,
 
-    // CMAC PRFs
-    CmacAes128,
-    CmacAes192,
-    CmacAes256,
-    CmacTdes3
+        // CMAC PRFs
+        CmacAes128,
+        CmacAes192,
+        CmacAes256,
+        CmacTdes3
+    }
 }

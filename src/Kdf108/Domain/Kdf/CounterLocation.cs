@@ -19,25 +19,26 @@
 // SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // -----------------------------------------------------------------------------
 
-namespace Kdf108.Domain.Kdf;
-
-/// <summary>
-///     Specifies the position of the counter in the KDF input
-/// </summary>
-public enum CounterLocation
+namespace Kdf108.Domain.Kdf
 {
     /// <summary>
-    ///     Counter appears before the fixed input data
+    ///     Specifies the position of the counter in the KDF input
     /// </summary>
-    BeforeFixed,
+    public enum CounterLocation
+    {
+        /// <summary>
+        ///     Counter appears before the fixed input data
+        /// </summary>
+        BeforeFixed,
 
-    /// <summary>
-    ///     Counter appears after the fixed input data
-    /// </summary>
-    AfterFixed,
+        /// <summary>
+        ///     Counter appears after the fixed input data
+        /// </summary>
+        AfterFixed,
 
-    /// <summary>
-    ///     Counter appears in the middle of the fixed input data
-    /// </summary>
-    MiddleFixed
+        /// <summary>
+        ///     Counter appears in the middle of the fixed input data
+        /// </summary>
+        MiddleFixed
+    }
 }

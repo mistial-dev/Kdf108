@@ -19,27 +19,28 @@
 // SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // -----------------------------------------------------------------------------
 
-namespace Kdf108.Domain.Kdf;
-
-public sealed class KdfRequest
+namespace Kdf108.Domain.Kdf
 {
-    public KdfRequest(
-        byte[] keyDerivationKey,
-        string label,
-        byte[] context,
-        long outputLengthBits,
-        KdfOptions options)
+    public sealed class KdfRequest
     {
-        KeyDerivationKey = keyDerivationKey;
-        Label = label;
-        Context = context;
-        OutputLengthBits = outputLengthBits;
-        Options = options;
-    }
+        public KdfRequest(
+            byte[] keyDerivationKey,
+            string label,
+            byte[] context,
+            long outputLengthBits,
+            KdfOptions options)
+        {
+            KeyDerivationKey = keyDerivationKey;
+            Label = label;
+            Context = context;
+            OutputLengthBits = outputLengthBits;
+            Options = options;
+        }
 
-    public byte[] KeyDerivationKey { get; set; }
-    public string Label { get; set; }
-    public byte[] Context { get; set; }
-    public long OutputLengthBits { get; set; }
-    public KdfOptions Options { get; set; }
+        public byte[] KeyDerivationKey { get; set; }
+        public string Label { get; set; }
+        public byte[] Context { get; set; }
+        public long OutputLengthBits { get; set; }
+        public KdfOptions Options { get; set; }
+    }
 }
